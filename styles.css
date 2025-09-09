@@ -116,3 +116,7 @@ html {
   color: #cb2525 !important;
   font-weight: inherit;
 }
+
+.target {
+  cursor: pointer;
+}
