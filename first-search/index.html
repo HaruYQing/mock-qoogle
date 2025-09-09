@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mock search engine for tv drama shooting. Won't collect any information."
+    />
+    <title>Qoogle | mock</title>
+
+    <!-- 網站 icon -->
+    <link rel="icon" href="../assets/icons/favicon.png" type="image/png" />
+
+    <!-- 預載圖片 -->
+    <link rel="preload" as="image" href="../assets/images/old_tiny_logo.webp" />
+    <link
+      rel="preload"
+      as="image"
+      href="../assets/images/old_pagination.webp"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../old.css" />
+    <link rel="stylesheet" href="./first-search.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <header class="old-header">
+        <div class="old-left">
+          <span class="wide focused">搜尋</span>
+          <span class="wide">相片</span>
+          <span class="wide">地圖</span>
+          <span>Play</span>
+          <span>QouTube</span>
+          <span class="wide">新聞</span>
+          <span>Qmail</span>
+          <span class="wide">文件</span>
+          <span class="wide">更多</span>
+          <img src="../assets/icons/down_tri_icon.png" />
+        </div>
+
+        <div class="old-right">
+          <span>登入</span>
+          <img src="../assets/icons/setting_icon.png" />
+        </div>
+      </header>
+
+      <header class="second-header">
+        <div class="second-top">
+          <img src="../assets/images/old_tiny_logo.webp" />
+
+          <form class="second-search-container" onsubmit="handleSubmit(event)">
+            <input type="text" />
+            <button type="submit">
+              <img src="../assets/icons/search_icon.png" />
+            </button>
+          </form>
+
+          <span>安全搜尋:關閉</span>
+        </div>
+        <div class="second-middle">
+          <span>網頁</span>
+          <span>圖片</span>
+          <span>地圖</span>
+          <span>評論</span>
+          <span
+            >更多
+            <img src="../assets/icons/down_tri_tiny_icon.png" />
+          </span>
+          <span>搜尋工具</span>
+        </div>
+        <div class="second-bottom">
+          <span>約有320項結果(搜尋時間:約0.24秒)</span>
+        </div>
+      </header>
+
+      <main class="second-main">
+        <section class="result-container">
+          <!-- with photo * 3 -->
+          <div class="article-container">
+            <div class="article-head">
+              <span class="article-title"
+                ><span class="key-word">江志勇</span>:用文字拾起生活的碎片</span
+              >
+              <span class="article-url"
+                >https://www.booklife.cc/writer 閱讀時光</span
+              >
+            </div>
+            <div class="article-body">
+              <img src="../assets/images/photo_1.webp" />
+              <span
+                >新書《風中的呢喃》收錄<span class="key-word">江志勇</span
+                >多年來的觀察，他將日常片段化為故事，映照出愛與孤獨的微妙平衡。他說，寫作不只是自我表達，更是一種與世界對話的方式。</span
+              >
+            </div>
+          </div>
+          <div class="article-container">
+            <div class="article-head">
+              <span class="article-title"
+                ><span class="key-word">江志勇</span>:設計的本質是理解生活</span
+              >
+              <span class="article-url"
+                >https://www.citystyle.cc/design 空間美學網</span
+              >
+            </div>
+            <div class="article-body">
+              <img src="../assets/images/photo_2.webp" />
+              <span
+                ><span class="key-word">江志勇</span
+                >指出，好的設計不是追求華麗，而是能融入日常，讓居住者自在安心。他善於用簡單線條和色彩搭配創造空間感，並強調設計應該回應人真正的需求。</span
+              >
+            </div>
+          </div>
+          <div class="article-container">
+            <div class="article-head">
+              <span class="article-title"
+                >專訪<span class="key-word">江志勇</span
+                >:療癒從真誠的對話開始</span
+              >
+              <span class="article-url"
+                >https://www.lifebalance.cc/jiangzhiyong 健康人生網</span
+              >
+            </div>
+            <div class="article-body">
+              <img src="../assets/images/photo_3.webp" />
+              <span
+                >他分享多年心理輔導經驗，指出「安全的傾訴空間」能讓人漸漸打開心門，重新找回自我價值與勇氣。</span
+              >
+            </div>
+          </div>
+
+          <!-- without photo -->
+          <div class="article-container">
+            <div class="article-head">
+              <span class="article-title"
+                >專訪<span class="key-word">江志勇</span
+                >:療癒從真誠的對話開始</span
+              >
+              <span class="article-url"
+                >https://www.lifebalance.cc/jiangzhiyong 健康人生網</span
+              >
+            </div>
+            <div class="article-body">
+              <span
+                >他分享多年心理輔導經驗，指出「安全的傾訴空間」能讓人漸漸打開心門，重新找回自我價值與勇氣。</span
+              >
+            </div>
+          </div>
+        </section>
+
+        <div class="pagination">
+          <img src="../assets/images/old_pagination.webp" />
+          <div class="pagination-text">
+            <span class="current-page">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+            <span class="next-page">下一頁</span>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

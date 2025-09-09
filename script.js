@@ -1,6 +1,9 @@
 function handleOldSearch(event) {
   event.preventDefault();
-  console.log(event);
+  window.location.assign("first-search/index.html");
+}
 
-  // window.location.assign("wu-chiu-feng/index.html");
+function handleSubmit(event) {
+  event.preventDefault();
+  console.log(event);
 }

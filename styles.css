@@ -99,8 +99,9 @@ html {
 
 /* === 專案特定樣式從這裡開始 === */
 .main-container {
+  border: 1px solid red;
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -109,4 +110,8 @@ html {
 
 .hidden {
   display: none;
+}
+
+.key-word {
+  color: #cb2525 !important;
 }
