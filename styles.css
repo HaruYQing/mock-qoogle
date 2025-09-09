@@ -101,7 +101,8 @@ html {
 .main-container {
   border: 1px solid red;
   width: 100%;
-  height: fit-content;
+  min-height: 100vh;
+  overflow: auto;
   position: relative;
   display: flex;
   flex-direction: column;
