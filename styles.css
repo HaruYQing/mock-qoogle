@@ -114,4 +114,5 @@ html {
 
 .key-word {
   color: #cb2525 !important;
+  font-weight: inherit;
 }

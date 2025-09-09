@@ -5,7 +5,6 @@ function handleOldSearch(event) {
 
 function handleSubmit(event) {
   event.preventDefault();
-  window.location.href = "diamond/index.html";
 }
 
 function navigate(event, url) {
