@@ -1,0 +1,113 @@
+/* <weight>: Use a value from 200 to 900 */
+span,
+button,
+a {
+  font-family: "Noto Serif TC", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* ===== HEADER ===== */
+.old-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  /* gap: 24px; */
+  padding: 4px 32px;
+  background-color: #2e3030;
+}
+.old-header span {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 20px;
+  padding: 8px 4px;
+  border-top: 8px solid #2e3030;
+}
+/* ----- HEADER LEFT ----- */
+.old-header .old-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.old-header .old-left span.wide {
+  letter-spacing: 8px;
+}
+.old-header .old-left span.focused {
+  border-top: 8px solid #b52c2c;
+}
+.old-header .old-left img {
+  display: inline-block;
+  margin-top: 8px;
+}
+/* ----- HEADER RIGHT ----- */
+.old-header .old-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.old-header .old-right img {
+  display: inline-block;
+  border-left: 1px solid #ffffff94;
+  padding: 0 12px;
+}
+
+/* ===== MAIN ===== */
+.old-main {
+  /* margin-top: -160px; */
+  width: 100%;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+
+/* ----- MAIN LOGO ----- */
+/* .old-main .old-logo {} */
+
+/* ----- MAIN SEARCH ----- */
+.old-main .old-search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.old-main .old-search-container input {
+  width: 660px;
+  height: 32px;
+  border: 1px solid #d6d7d8;
+  padding: 4px 16px;
+}
+.old-main .old-search-container input:focus {
+  outline: unset;
+}
+.old-main .old-search-container .old-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.old-main .old-search-container .old-btn-container button {
+  padding: 4px 8px;
+  border: 1px solid #d6d7d8;
+  border-radius: 4px;
+  background-color: #f7f7f7;
+  color: #6d6d6d;
+}
+
+/* ----- MAIN LINKS ----- */
+.old-main .old-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+.old-main .old-links-container a {
+  color: #3b59a3;
+  font-weight: 600;
+}

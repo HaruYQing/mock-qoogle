@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qoogle | mock</title>
+
+    <!-- 網站 icon -->
+    <link rel="icon" href="./assets/icons/favicon.png" type="image/png" />
+
+    <!-- 預載圖片 -->
+    <link rel="preload" as="image" href="./assets/images/old_logo.webp" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./old.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <header class="old-header">
+        <div class="old-left">
+          <span class="wide focused">搜尋</span>
+          <span class="wide">相片</span>
+          <span class="wide">地圖</span>
+          <span>Play</span>
+          <span>QouTube</span>
+          <span class="wide">新聞</span>
+          <span>Qmail</span>
+          <span class="wide">文件</span>
+          <span class="wide">更多</span>
+          <img src="./assets/icons/down_tri_icon.png" />
+        </div>
+
+        <div class="old-right">
+          <span>登入</span>
+          <img src="./assets/icons/setting_icon.png" />
+        </div>
+      </header>
+
+      <main class="old-main">
+        <!-- logo -->
+        <img src="./assets/images/old_logo.webp" class="old-logo" />
+
+        <!-- search & btn -->
+        <form onsubmit="handleOldSearch(event)" class="old-search-container">
+          <input type="text" />
+          <div class="old-btn-container">
+            <button type="submit">Qoogle搜尋</button>
+            <button type="button">好手氣</button>
+          </div>
+        </form>
+
+        <!-- links -->
+        <div class="old-links-container">
+          <a href="#">廣告計劃</a>
+          <a href="#">商業解決方案</a>
+          <a href="#">+Qoogle</a>
+          <a href="#">關於Qoogle</a>
+        </div>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
