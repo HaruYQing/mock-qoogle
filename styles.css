@@ -99,7 +99,6 @@ html {
 
 /* === 專案特定樣式從這裡開始 === */
 .main-container {
-  border: 1px solid red;
   width: 100%;
   min-height: 100vh;
   overflow: auto;

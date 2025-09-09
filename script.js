@@ -5,5 +5,12 @@ function handleOldSearch(event) {
 
 function handleSubmit(event) {
   event.preventDefault();
-  console.log(event);
+  window.location.href = "diamond/index.html";
+}
+
+function navigate(event, url) {
+  event.preventDefault();
+  // 組合完整的根目錄URL
+  const fullUrl = window.location.origin + "/" + url.replace(/^\//, "");
+  window.location.assign(fullUrl);
 }
