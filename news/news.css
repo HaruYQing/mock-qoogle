@@ -50,13 +50,13 @@
   height: 38px;
 }
 .sub-header .search-container {
-  width: 1000px;
+  width: 900px;
   display: flex;
   align-items: center;
   position: relative;
 }
 .sub-header .search-container input {
-  width: 1000px;
+  width: 900px;
   border: 1px solid #dddfe0;
   background-color: #f7f7f7;
   color: #848991;
