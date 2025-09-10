@@ -1,195 +1,291 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mock search engine for tv drama shooting. Won't collect any information."
+    />
+    <title>Qoogle | mock</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mock search engine for tv drama shooting. Won't collect any information." />
-  <title>Qoogle | mock</title>
+    <!-- 網站 icon -->
+    <link rel="icon" href="../assets/icons/favicon.png" type="image/png" />
 
-  <!-- 網站 icon -->
-  <link rel="icon" href="../assets/icons/favicon.png" type="image/png" />
+    <!-- 預載圖片 -->
+    <link rel="preload" as="image" href="../assets/images/old_tiny_logo.webp" />
+    <link
+      rel="preload"
+      as="image"
+      href="../assets/images/old_pagination.webp"
+    />
 
-  <!-- 預載圖片 -->
-  <link rel="preload" as="image" href="../assets/images/old_tiny_logo.webp" />
-  <link rel="preload" as="image" href="../assets/images/old_pagination.webp" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../old.css" />
+    <link rel="stylesheet" href="../first-search/first-search.css" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="../styles.css" />
-  <link rel="stylesheet" href="../old.css" />
-  <link rel="stylesheet" href="../first-search/first-search.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet" />
-</head>
-
-<body>
-  <div class="main-container">
-    <header class="old-header">
-      <div class="old-left">
-        <span class="wide focused">搜尋</span>
-        <span class="wide">相片</span>
-        <span class="wide">地圖</span>
-        <span>Play</span>
-        <span>QouTube</span>
-        <span class="wide">新聞</span>
-        <span>Qmail</span>
-        <span class="wide">文件</span>
-        <span class="wide">更多</span>
-        <img src="../assets/icons/down_tri_icon.png" />
-      </div>
-
-      <div class="old-right">
-        <span>登入</span>
-        <img src="../assets/icons/setting_icon.png" />
-      </div>
-    </header>
-
-    <header class="second-header">
-      <div class="second-top">
-        <img src="../assets/images/old_tiny_logo.webp" />
-
-        <form class="second-search-container" onsubmit="handleSubmit(event)">
-          <input type="text" />
-          <button type="submit">
-            <img src="../assets/icons/search_icon.png" />
-          </button>
-        </form>
-
-        <span>安全搜尋:關閉</span>
-      </div>
-      <div class="second-middle">
-        <span>網頁</span>
-        <span>圖片</span>
-        <span>地圖</span>
-        <span>評論</span>
-        <span>更多
-          <img src="../assets/icons/down_tri_tiny_icon.png" />
-        </span>
-        <span>搜尋工具</span>
-      </div>
-      <div class="second-bottom">
-        <span>約有320項結果(搜尋時間:約0.24秒)</span>
-      </div>
-    </header>
-
-    <main class="second-main">
-      <section class="result-container">
-        <!-- 1 -->
-        <div class="article-container">
-          <div class="article-head">
-            <span class="article-title">揚威建設30億帳目異常檢調鎖定可疑金流</span>
-            <span class="article-url">https://www.morningpost.cc/news 晨曦新聞網</span>
-          </div>
-          <div class="article-body">
-            <span><span class="key-word">鑽石</span>；在同月2日，<span class="key-word">江志勇</span>用其中22億5000多萬元贓款購買歐元外匯，並轉匯到他在香港的銀行帳戶，再用這筆錢購買價值約17億2000多萬元的鑽石...</span>
-          </div>
-        </div>
-        <!-- 2 -->
-        <div class="article-container">
-          <div class="article-head">
-            <span class="article-title">30億換購<span class="key-word">鑽石</span>&nbsp;<span class="key-word">江志勇</span>洗錢大逃亡</span>
-            <span class="article-url">https://www.globalfocus.tw/society 環球焦點報</span>
-          </div>
-          <div class="article-body">
-            <span>前揚威建設公司總經理，<span class="key-word">江志勇</span>，盜賣客戶30億股票案，檢調經過偵辦有重大發現，江志勇因為預知犯行一旦曝光，銀行戶頭將被凍結，於是花了一個月的時間，把大部分的……</span>
-          </div>
-        </div>
-        <!-- 3 -->
-        <div class="article-container">
-          <div class="article-head">
-            <span class="article-title">檢調調查揚威建設疑涉資金挪用 <span class="key-word">江志勇</span>失聯</span>
-            <span class="article-url">https://www.eastasia-news.cc/local 東亞新聞網</span>
-          </div>
-          <div class="article-body">
-            <span>...<span class="key-word">鑽石</span>；在同月2日；<span class="key-word">江志勇</span>用其中22億5000多萬元贓款購買歐元外匯，並轉匯到他在香港的銀行帳戶，再用這筆錢購買價值約17億2000多萬元的鑽石。北檢偵辦...</span>
-          </div>
-        </div>
-        <!-- 4 -->
-        <div class="article-container">
-          <div class="article-head">
-            <span class="article-title">黑幕重重！揚威建設資金疑被洗成<span class="key-word">鑽石</span>，總經理下落不明</span>
-            <span class="article-url">https://www.metroexpress.tw/finance 都會快訊</span>
-          </div>
-          <div class="article-body">
-            <span>檢方調查多年，仍未能釐清<span class="key-word">江志勇</span>的完整金流。雖有部分證據顯示他利用<span class="key-word">鑽石</span>轉移資產，但由於時效已滿，法律上不得不撤銷起訴。</span>
-          </div>
-        </div>
-        <!-- 5 -->
-        <div class="article-container">
-          <div class="article-head">
-            <span class="article-title">「錢進哪裡去？」30億變<span class="key-word">鑽石</span>&nbsp;<span class="key-word">江志勇</span>人間蒸發</span>
-            <span class="article-url">https://www.peoplevoice.cc/story 民聲日報</span>
-          </div>
-          <div class="article-body">
-            <span>公司聲明指出，<span class="key-word">江志勇</span>已於14年前離職，對其後續行為不負任何責任。外界質疑公司監管不力，但揚威建設澄清當時內控制度仍符合規範。</span>
-          </div>
-        </div>
-        <!-- 6 *** -->
-        <div class="article-container target" onclick="navigate(event, 'news/index.html')">
-          <div class="article-head">
-            <span class="article-title">揚威建設30億資金掏空疑雲 總經理<span class="key-word">江志勇</span>全家人行蹤成謎</span>
-            <span class="article-url">https://www.zhongdunews.tw 中都新聞</span>
-          </div>
-          <div class="article-body">
-            <span>國內知名建設公司揚威建設股份有限公司，近日傳出重大財務醜聞。檢調單位接獲檢舉，指稱該公司總經理<span class="key-word">江志勇</span>涉嫌自1998年初起，透過多次小額轉帳方式，...</span>
-          </div>
-        </div>
-        <!-- 7 -->
-        <div class="article-container">
-          <div class="article-head">
-            <span class="article-title">30億洗錢案！<span class="key-word">江志勇</span>神隱多年 棄案成謎</span>
-            <span class="article-url">https://www.freemorning.cc/justice 自由晨報</span>
-          </div>
-          <div class="article-body">
-            <span>案件一度被媒體形容為「台版瞞天過海」，<span class="key-word">江志勇</span>的去向至今成謎。檢方表示，即使追訴無效，也將持續調查是否涉及跨國集團。</span>
-          </div>
-        </div>
-        <!-- 8 -->
-        <div class="article-container">
-          <div class="article-head">
-            <span class="article-title">揚威建設30億掏空案！檢調急追、公司高層四處找<span class="key-word">鑽石</span></span>
-            <span class="article-url">https://www.huaxiaexpress.tw/legal 華夏快報</span>
-          </div>
-          <div class="article-body">
-            <span>此案原本引發社會高度關注，卻因法律時效限制而無疾而終。外界批評制度漏洞過大，導致重大經濟犯罪難以追責。</span>
-          </div>
-        </div>
-        <!-- 9 -->
-        <div class="article-container">
-          <div class="article-head">
-            <span class="article-title">建商最爆醜聞：<span class="key-word">江志勇</span>30億失蹤案，<span class="key-word">鑽石</span>疑雲滿天飛</span>
-            <span class="article-url">https://www.justiceview.tw/analysis 正義觀察報</span>
-          </div>
-          <div class="article-body">
-            <span><span class="key-word">江志勇</span>透過多重手法隱匿金流，專家分析<span class="key-word">鑽石</span>交易因體積小、價值高，往往成為跨國洗錢的主要管道。</span>
-          </div>
+  <body>
+    <div class="main-container">
+      <header class="old-header">
+        <div class="old-left">
+          <span class="wide focused">搜尋</span>
+          <span class="wide">相片</span>
+          <span class="wide">地圖</span>
+          <span>Play</span>
+          <span>QouTube</span>
+          <span class="wide">新聞</span>
+          <span>Qmail</span>
+          <span class="wide">文件</span>
+          <span class="wide">更多</span>
+          <img src="../assets/icons/down_tri_icon.png" />
         </div>
 
-      </section>
-
-      <div class="pagination">
-        <img src="../assets/images/old_pagination.webp" />
-        <div class="pagination-text">
-          <span class="current-page">1</span>
-          <span>2</span>
-          <span>3</span>
-          <span>4</span>
-          <span>5</span>
-          <span>6</span>
-          <span>7</span>
-          <span>8</span>
-          <span>9</span>
-          <span>10</span>
-          <span class="next-page">下一頁</span>
+        <div class="old-right">
+          <span>登入</span>
+          <img src="../assets/icons/setting_icon.png" />
         </div>
-      </div>
-    </main>
-  </div>
+      </header>
 
-  <script src="../script.js"></script>
-</body>
+      <header class="second-header">
+        <div class="second-top">
+          <img src="../assets/images/old_tiny_logo.webp" />
 
+          <form class="second-search-container" onsubmit="handleSubmit(event)">
+            <input type="text" value="江志勇 鑽石" />
+            <button type="submit">
+              <img src="../assets/icons/search_icon.png" />
+            </button>
+          </form>
+
+          <span>安全搜尋:關閉</span>
+        </div>
+        <div class="second-middle">
+          <span>網頁</span>
+          <span>圖片</span>
+          <span>地圖</span>
+          <span>評論</span>
+          <span
+            >更多
+            <img src="../assets/icons/down_tri_tiny_icon.png" />
+          </span>
+          <span>搜尋工具</span>
+        </div>
+        <div class="second-bottom">
+          <span>約有320項結果(搜尋時間:約0.24秒)</span>
+        </div>
+      </header>
+
+      <main class="second-main">
+        <section class="result-container">
+          <!-- 1 -->
+          <div class="article-container">
+            <div class="article-head">
+              <span class="article-title"
+                >揚威建設30億帳目異常檢調鎖定可疑金流</span
+              >
+              <span class="article-url"
+                >https://www.morningpost.cc/news 晨曦新聞網</span
+              >
+            </div>
+            <div class="article-body">
+              <span
+                ><span class="key-word">鑽石</span>；在同月2日，<span
+                  class="key-word"
+                  >江志勇</span
+                >用其中22億5000多萬元贓款購買歐元外匯，並轉匯到他在香港的銀行帳戶，再用這筆錢購買價值約17億2000多萬元的鑽石...</span
+              >
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="article-container">
+            <div class="article-head">
+              <span class="article-title"
+                >30億換購<span class="key-word">鑽石</span>&nbsp;<span
+                  class="key-word"
+                  >江志勇</span
+                >洗錢大逃亡</span
+              >
+              <span class="article-url"
+                >https://www.globalfocus.tw/society 環球焦點報</span
+              >
+            </div>
+            <div class="article-body">
+              <span
+                >前揚威建設公司總經理，<span class="key-word">江志勇</span
+                >，盜賣客戶30億股票案，檢調經過偵辦有重大發現，江志勇因為預知犯行一旦曝光，銀行戶頭將被凍結，於是花了一個月的時間，把大部分的……</span
+              >
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="article-container">
+            <div class="article-head">
+              <span class="article-title"
+                >檢調調查揚威建設疑涉資金挪用
+                <span class="key-word">江志勇</span>失聯</span
+              >
+              <span class="article-url"
+                >https://www.eastasia-news.cc/local 東亞新聞網</span
+              >
+            </div>
+            <div class="article-body">
+              <span
+                >...<span class="key-word">鑽石</span>；在同月2日；<span
+                  class="key-word"
+                  >江志勇</span
+                >用其中22億5000多萬元贓款購買歐元外匯，並轉匯到他在香港的銀行帳戶，再用這筆錢購買價值約17億2000多萬元的鑽石。北檢偵辦...</span
+              >
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="article-container">
+            <div class="article-head">
+              <span class="article-title"
+                >黑幕重重！揚威建設資金疑被洗成<span class="key-word">鑽石</span
+                >，總經理下落不明</span
+              >
+              <span class="article-url"
+                >https://www.metroexpress.tw/finance 都會快訊</span
+              >
+            </div>
+            <div class="article-body">
+              <span
+                >檢方調查多年，仍未能釐清<span class="key-word">江志勇</span
+                >的完整金流。雖有部分證據顯示他利用<span class="key-word"
+                  >鑽石</span
+                >轉移資產，但由於時效已滿，法律上不得不撤銷起訴。</span
+              >
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="article-container">
+            <div class="article-head">
+              <span class="article-title"
+                >「錢進哪裡去？」30億變<span class="key-word">鑽石</span
+                >&nbsp;<span class="key-word">江志勇</span>人間蒸發</span
+              >
+              <span class="article-url"
+                >https://www.peoplevoice.cc/story 民聲日報</span
+              >
+            </div>
+            <div class="article-body">
+              <span
+                >公司聲明指出，<span class="key-word">江志勇</span
+                >已於14年前離職，對其後續行為不負任何責任。外界質疑公司監管不力，但揚威建設澄清當時內控制度仍符合規範。</span
+              >
+            </div>
+          </div>
+          <!-- 6 *** -->
+          <div
+            class="article-container target"
+            onclick="navigate(event, 'news/index.html')"
+          >
+            <div class="article-head">
+              <span class="article-title"
+                >揚威建設30億資金掏空疑雲 總經理<span class="key-word"
+                  >江志勇</span
+                >全家人行蹤成謎</span
+              >
+              <span class="article-url"
+                >https://www.zhongdunews.tw 中都新聞</span
+              >
+            </div>
+            <div class="article-body">
+              <span
+                >國內知名建設公司揚威建設股份有限公司，近日傳出重大財務醜聞。檢調單位接獲檢舉，指稱該公司總經理<span
+                  class="key-word"
+                  >江志勇</span
+                >涉嫌自1998年初起，透過多次小額轉帳方式，...</span
+              >
+            </div>
+          </div>
+          <!-- 7 -->
+          <div class="article-container">
+            <div class="article-head">
+              <span class="article-title"
+                >30億洗錢案！<span class="key-word">江志勇</span>神隱多年
+                棄案成謎</span
+              >
+              <span class="article-url"
+                >https://www.freemorning.cc/justice 自由晨報</span
+              >
+            </div>
+            <div class="article-body">
+              <span
+                >案件一度被媒體形容為「台版瞞天過海」，<span class="key-word"
+                  >江志勇</span
+                >的去向至今成謎。檢方表示，即使追訴無效，也將持續調查是否涉及跨國集團。</span
+              >
+            </div>
+          </div>
+          <!-- 8 -->
+          <div class="article-container">
+            <div class="article-head">
+              <span class="article-title"
+                >揚威建設30億掏空案！檢調急追、公司高層四處找<span
+                  class="key-word"
+                  >鑽石</span
+                ></span
+              >
+              <span class="article-url"
+                >https://www.huaxiaexpress.tw/legal 華夏快報</span
+              >
+            </div>
+            <div class="article-body">
+              <span
+                >此案原本引發社會高度關注，卻因法律時效限制而無疾而終。外界批評制度漏洞過大，導致重大經濟犯罪難以追責。</span
+              >
+            </div>
+          </div>
+          <!-- 9 -->
+          <div class="article-container">
+            <div class="article-head">
+              <span class="article-title"
+                >建商最爆醜聞：<span class="key-word">江志勇</span
+                >30億失蹤案，<span class="key-word">鑽石</span>疑雲滿天飛</span
+              >
+              <span class="article-url"
+                >https://www.justiceview.tw/analysis 正義觀察報</span
+              >
+            </div>
+            <div class="article-body">
+              <span
+                ><span class="key-word">江志勇</span
+                >透過多重手法隱匿金流，專家分析<span class="key-word">鑽石</span
+                >交易因體積小、價值高，往往成為跨國洗錢的主要管道。</span
+              >
+            </div>
+          </div>
+        </section>
+
+        <div class="pagination">
+          <img src="../assets/images/old_pagination.webp" />
+          <div class="pagination-text">
+            <span class="current-page">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+            <span class="next-page">下一頁</span>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="../script.js"></script>
+  </body>
 </html>
