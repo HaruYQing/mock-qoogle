@@ -1,28 +1,114 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mock search engine for tv drama shooting. Won't collect any information."
+    />
+    <title>中都新聞網</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mock search engine for tv drama shooting. Won't collect any information." />
-  <title>中都新聞網</title>
+    <!-- 網站 icon -->
+    <link rel="icon" href="../assets/icons/favicon.png" type="image/png" />
 
-  <!-- 網站 icon -->
-  <link rel="icon" href="../assets/icons/favicon.png" type="image/png" />
+    <!-- 預載圖片 -->
+    <link rel="preload" as="image" href="../assets/images/news_logo.webp" />
+    <link rel="preload" as="image" href="../assets/images/news_1.webp" />
+    <link rel="preload" as="image" href="../assets/images/news_2.webp" />
+    <link rel="preload" as="image" href="../assets/images/news_3.webp" />
 
-  <!-- 預載圖片 -->
-  <!-- <link rel="preload" as="image" href="../assets/images/old_tiny_logo.webp" /> -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="./news.css" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="../styles.css" />
-  <link rel="stylesheet" href="./news.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet" />
-</head>
+  <body>
+    <div class="custom-container">
+      <header class="news-header">
+        <span class="noto-serif">
+          <img src="../assets/icons/home_icon.png" />
+          首頁
+        </span>
+        <span class="noto-serif">即時</span>
+        <span class="noto-serif">生活</span>
+        <span class="noto-serif">政治</span>
+        <span class="noto-serif">娛樂</span>
+        <span class="noto-serif">氣象</span>
+        <span class="noto-serif">全球</span>
+        <span class="noto-serif">社會</span>
+        <span class="noto-serif">運動</span>
+        <span class="noto-serif">熱門</span>
+        <span class="noto-serif">影音</span>
+        <span class="noto-serif">更多</span>
+      </header>
 
-<body>
-  <h1>DEADLINE: 9/11</h1>
-</body>
+      <header class="sub-header">
+        <img src="../assets/images/news_logo.webp" />
+
+        <div class="search-container">
+          <input type="text" value="新聞搜尋" />
+          <button>
+            <img src="../assets/icons/news_search_icon.png" />
+          </button>
+        </div>
+
+        <button class="login-btn">登入</button>
+      </header>
+
+      <main class="news-main">
+        <h1 class="news-title noto-serif">
+          揚威建設30億資金掏空疑雲 總經理江志勇全家人行蹤成謎
+        </h1>
+
+        <div class="news-credit">
+          <small class="news-date noto-serif">2000年11月30日</small>
+          <small class="news-author noto-serif">本報記者/綜合報導</small>
+        </div>
+
+        <p class="noto-serif">
+          國內知名建設公司揚威建設股份有限公司，近日傳出重大財務醜聞。檢調單位接獲檢舉，
+          指稱該公司總經理江志勇涉嫌自1998年初起，透過多次小額轉帳方式，將公司帳戶內超過
+          新台幣30億元的資金逐步移往不明帳戶，資金最終疑似轉換為高價鑽石隱匿，整體去向成謎。
+        </p>
+
+        <img src="../assets/images/news_1.webp" />
+
+        <p class="noto-serif">
+          與一般掏空案件不同，本案資金流向並未包裝成「投資案」或「顧問費」，而是長期、
+          零星地從公司現金帳戶轉出，形成極難追查的金流軌跡。檢調指出,，帳目雖顯示部分資
+          金流向境外，但缺乏受益人資料與合法用途說明。知情人士透露，揚威建設內部高層已
+          自行成立調查小組，調查失蹤的30億資金與鑽石去向，並向各界徵求可能線索。該公司
+          聲明強調，企業本身也是受害者，已積極協助檢調提供所有財務紀錄，並請求金融單位協助
+          追蹤跨帳戶交易。
+        </p>
+
+        <img src="../assets/images/news_2.webp" />
+
+        <p class="noto-serif">
+          然而截至目前為止，江志勇及疑似購入的鑽石均下落不明。江志勇在事跡敗露後突然失聯，
+          未再返回公司，電話與住所均無法聯繫。檢調正研判其是否已離境，並擴大調閱出入境資料
+          及相關金融交易紀錄。
+        </p>
+
+        <img src="../assets/images/news_3.webp" />
+
+        <p class="noto-serif">
+          本案因涉及巨額資金及可能的跨境鑽石交易，引發金融監理單位與司法界高度關注。
+          法律界人士表示，若查明江志勇確有挪用公司資金並轉換成鑽石藏匿，恐面臨業務侵占、
+          背信及洗錢等多項刑責，刑度可達十年以上。目前案件仍在調查初期，檢方呼籲外界勿過度揣測，
+          並強調將持續追查資金及鑽石的最終流向。揚威建設高層亦表示，將全力配合檢調，
+          力求釐清真相、保護公司及股東權益。
+        </p>
+      </main>
+    </div>
+  </body>
+</html>
