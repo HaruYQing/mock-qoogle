@@ -110,6 +110,7 @@
   font-weight: 600;
   text-decoration: underline;
   color: #162a88;
+  cursor: pointer;
 }
 .second-main .result-container .article-container .article-head .article-url {
   font-size: 14px;

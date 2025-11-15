@@ -1,3 +1,31 @@
+function handleNewSearch(event) {
+  event.preventDefault();
+  const searchTerm = event.target[0].value;
+  let url = "";
+
+  switch (searchTerm) {
+    case "揚威建設":
+      url = "young-wei.html";
+      break;
+
+    case "宋秀鑾":
+      url = "song-shu-luang.html";
+      break;
+
+    case "包長鴻":
+      url = "bao-chang-hong.html";
+      break;
+
+    case "鴻雲案":
+      url = "hong-yun.html";
+      break;
+  }
+
+  if (url) {
+    window.location.assign(url);
+  }
+}
+
 function handleOldSearch(event) {
   event.preventDefault();
   window.location.assign("first-search/index.html");

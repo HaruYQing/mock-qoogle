@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mock search engine for tv drama shooting. Won't collect any information." />
+  <title>Qoogle | mock</title>
+
+  <!-- 網站 icon -->
+  <link rel="icon" href="./assets/icons/favicon.png" type="image/png" />
+
+  <!-- 預載圖片 -->
+  <link rel="preload" as="image" href="./assets/images/old_tiny_logo.webp" />
+  <link rel="preload" as="image" href="./assets/images/old_pagination.webp" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./old.css" />
+  <link rel="stylesheet" href=".//first-search/first-search.css" />
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="main-container">
+    <header class="old-header">
+      <div class="old-left">
+        <span class="wide focused">搜尋</span>
+        <span class="wide">相片</span>
+        <span class="wide">地圖</span>
+        <span>Play</span>
+        <span>QouTube</span>
+        <span class="wide">新聞</span>
+        <span>Qmail</span>
+        <span class="wide">文件</span>
+        <span class="wide">更多</span>
+        <img src="./assets/icons/down_tri_icon.png" />
+      </div>
+
+      <div class="old-right">
+        <span>登入</span>
+        <img src="./assets/icons/setting_icon.png" />
+      </div>
+    </header>
+
+    <header class="second-header">
+      <div class="second-top">
+        <img src="./assets/images/old_tiny_logo.webp" />
+
+        <form class="second-search-container" onsubmit="navigate(event, 'diamond/index.html')">
+          <input type="text" value="揚威建設" />
+          <button type="submit">
+            <img src="./assets/icons/search_icon.png" />
+          </button>
+        </form>
+
+        <span>安全搜尋:關閉</span>
+      </div>
+      <div class="second-middle">
+        <span>網頁</span>
+        <span>圖片</span>
+        <span>地圖</span>
+        <span>評論</span>
+        <span>更多
+          <img src="./assets/icons/down_tri_tiny_icon.png" />
+        </span>
+        <span>搜尋工具</span>
+      </div>
+      <div class="second-bottom">
+        <span>約有320項結果(搜尋時間:約0.24秒)</span>
+      </div>
+    </header>
+
+    <main class="second-main">
+      <section class="result-container">
+
+        <!-- without photo -->
+        <div class="article-container">
+          <div class="article-head">
+            <span class="article-title"><span class="key-word">江志勇</span>:料理是一種分享愛的方式</span>
+            <span class="article-url">https://www.foodlife.cc/chef 美味生活</span>
+          </div>
+          <div class="article-body">
+            <span>多年廚藝經驗，他堅持用當季食材，將傳統與創新融合在菜餚中。對他來說，每一道菜都是與人交流的語言，能喚起記憶與情感。</span>
+          </div>
+        </div>
+
+        <div class="article-container">
+          <div class="article-head">
+            <span class="article-title">帶著背包走世界:<span class="key-word">江志勇</span>的異國冒險</span>
+            <span class="article-url">https://www.artlifeplus.tw/exhibit 藝文新報</span>
+          </div>
+          <div class="article-body">
+            <span>他的作品融合街頭元素與抽象線條，讓觀者在顏色中看見自己。他相信藝術不該只是展示，而是與生活呼吸共鳴的一部分。</span>
+          </div>
+        </div>
+
+        <div class="article-container">
+          <div class="article-head">
+            <span class="article-title"><span class="key-word">江志勇:</span>音樂是情感的翻譯</span>
+            <span class="article-url">https://www.soundlife.tw/music 音浪誌</span>
+          </div>
+          <div class="article-body">
+            <span>從街頭到舞台，他用旋律說故事，相信音樂能跨越語言療癒人心。每一首歌都來自生命經驗，他說「寫歌就像記日記，只是用音符代替文字」。</span>
+          </div>
+        </div>
+
+        <div class="article-container">
+          <div class="article-head">
+            <span class="article-title"><span class="key-word">江志勇:</span>用鏡頭尋找人性的光影</span>
+            <span class="article-url">https://www.photoworld.cc/art 影像誌</span>
+          </div>
+          <div class="article-body">
+            <span>攝影作品橫跨人文、自然與街頭，捕捉稍縱即逝的瞬間。他認為相機是一種延伸視角的工具，可以讓人看見隱藏在日常裡的故事與真相。</span>
+          </div>
+        </div>
+
+        <div class="article-container">
+          <div class="article-head">
+            <span class="article-title"><span class="key-word">江志勇:</span>突破極限，才是運動的意義</span>
+            <span class="article-url">https://www.sportslife.tw/hero 運動時代</span>
+          </div>
+          <div class="article-body">
+            <span>從馬拉松到鐵人三項，他不斷挑戰自己，刷新紀錄。他說，運動帶來的不只是身體的強健，而是一種精神上的成長與自我超越。</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="pagination">
+        <img src="./assets/images/old_pagination.webp" />
+        <div class="pagination-text">
+          <span class="current-page">1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+          <span>10</span>
+          <span class="next-page">下一頁</span>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>
