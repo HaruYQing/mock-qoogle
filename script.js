@@ -41,3 +41,8 @@ function navigate(event, url) {
   const fullUrl = window.location.origin + "/" + url.replace(/^\//, "");
   window.location.assign(fullUrl);
 }
+
+function openNewPage(url) {
+  const fullUrl = window.location.origin + "/" + url.replace(/^\//, "");
+  window.open(fullUrl, "_blank");
+}
