@@ -106,6 +106,7 @@
   flex-direction: column;
 }
 .second-main .result-container .article-container .article-head .article-title {
+  width: 550px;
   font-size: 24px;
   font-weight: 600;
   text-decoration: underline;

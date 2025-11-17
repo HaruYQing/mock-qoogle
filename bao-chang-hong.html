@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mock search engine for tv drama shooting. Won't collect any information." />
+  <title>Qoogle | mock</title>
+
+  <!-- 網站 icon -->
+  <link rel="icon" href="./assets/icons/favicon.png" type="image/png" />
+
+  <!-- 預載圖片 -->
+  <link rel="preload" as="image" href="./assets/images/old_tiny_logo.webp" />
+  <link rel="preload" as="image" href="./assets/images/old_pagination.webp" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./old.css" />
+  <link rel="stylesheet" href="./first-search/first-search.css" />
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="main-container">
+    <header class="old-header">
+      <div class="old-left">
+        <span class="wide focused">搜尋</span>
+        <span class="wide">相片</span>
+        <span class="wide">地圖</span>
+        <span>Play</span>
+        <span>QouTube</span>
+        <span class="wide">新聞</span>
+        <span>Qmail</span>
+        <span class="wide">文件</span>
+        <span class="wide">更多</span>
+        <img src="./assets/icons/down_tri_icon.png" />
+      </div>
+
+      <div class="old-right">
+        <span>登入</span>
+        <img src="./assets/icons/setting_icon.png" />
+      </div>
+    </header>
+
+    <header class="second-header">
+      <div class="second-top">
+        <img src="./assets/images/old_tiny_logo.webp" />
+
+        <form class="second-search-container" onsubmit="handleNewSearch(event)">
+          <input type="text" value="包長鴻" />
+          <button type="submit">
+            <img src="./assets/icons/search_icon.png" />
+          </button>
+        </form>
+
+        <span>安全搜尋:關閉</span>
+      </div>
+      <div class="second-middle">
+        <span>網頁</span>
+        <span>圖片</span>
+        <span>地圖</span>
+        <span>評論</span>
+        <span>更多
+          <img src="./assets/icons/down_tri_tiny_icon.png" />
+        </span>
+        <span>搜尋工具</span>
+      </div>
+      <div class="second-bottom">
+        <span>約有318項結果(搜尋時間:約0.31秒)</span>
+      </div>
+    </header>
+
+    <main class="second-main">
+      <section class="result-container">
+        <!-- target -->
+        <div class="article-container">
+          <div class="article-head">
+            <a class="article-title" target="_blank" href="https://www.facebook.com/profile.php?id=61578275146660"><span class="key-word">宋秀鑾</span>的個人檔案</a>
+            <span class="article-url">https://zh-tw.basebook.com>public>宋秀鑾</span>
+          </div>
+          <div class="article-body">
+            <span>查看名為宋秀鑾的個人檔案。加入Basebook，與林宇岳及其他你可能認識的朋友聯絡。Basebook讓人們分享，將這個世界變得更開闊，聯繫更緊密。</span>
+          </div>
+        </div>
+
+        <!-- 2 + pic -->
+        <div class="article-container">
+          <div class="article-head">
+            <span class="article-title"><span class="key-word">宋秀鑾</span>昔日銀幕氣質女星 今掌建設版圖</span>
+            <span class="article-url">https://www.google.com/search?q=宋秀鑾+建設版圖</span>
+          </div>
+          <div class="article-body">
+            <img src="./assets/images/song-1.png" />
+            <span>曾以優雅形象活躍影視界，如今轉而布局城市建設。她以細膩觀察鍛造策略判斷，帶領企業走向多元開發。影迷口中的柔美個性，如今轉化為穩健與果決的管理風格。</span>
+          </div>
+        </div>
+
+        <!-- 3 + pic -->
+        <div class="article-container">
+          <div class="article-head">
+            <span class="article-title">【獨家內幕】當紅花旦<span class="key-word">宋秀鑾</span>為愛息影!與富商包長鴻未婚生子</span>
+            <span class="article-url">https://www.qoogle.com/search?q=宋秀鑾+未婚生子</span>
+          </div>
+          <div class="article-body">
+            <img src="./assets/images/song-2.png" />
+            <span>在演藝圈叱吒風雲、曾入圍大獎最佳女配角的知名女星<span class="key-word">宋秀鑾</span>，近來悄然淡出演藝圈，讓不少粉絲疑惑她的去向。根據本刊多方查證，宋秀鑾疑似因情字所困，為愛息影</span>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="article-container">
+          <div class="article-head">
+            <span class="article-title">前影壇人氣女演員 轉身投入大型不動產開發</span>
+            <span class="article-url">https://www.qoogle.com/search?q=宋秀鑾+不動產開發</span>
+          </div>
+          <div class="article-body">
+            <span>從幕前光環到幕後決策，宋秀鑾以多年累積的人脈協調力及對生活質感的敏感，將其融入建設規劃中。團隊形容她的領導不張揚，但方向清晰，節奏堅定。</span>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="article-container">
+          <div class="article-head">
+            <span class="article-title"><span class="key-word">宋秀鑾</span>:優雅形象未變 角色從主角到決策者</span>
+            <span class="article-url">https://www.qoogle.com/search?q=宋秀鑾+商業決策</span>
+          </div>
+          <div class="article-body">
+            <span>影視工作訓練了她在多變環境中的應對能力，這種柔韌被延伸至商業談判與團隊溝通。她強調企業不只建房，更建構生活方式。氣質依舊，但視野更加寬廣。</span>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="article-container">
+          <div class="article-head">
+            <span class="article-title">息影後再出場不在鏡頭前 而在城市裡</span>
+            <span class="article-url">https://www.qoogle.com/search?q=宋秀鑾+文化塑造</span>
+          </div>
+          <div class="article-body">
+            <span>宋秀鑾對城市感受敏銳，關注公共空間與人群流動關係。從地段判斷到社區文化塑造，她將建案視為可回應時代需求的生活場景，不只追求建物完成，更重視長期生命力。</span>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="article-container">
+          <div class="article-head">
+            <span class="article-title">從代表作品到代表企業 <span class="key-word">宋秀鑾</span>完成新舞台轉換</span>
+            <span class="article-url">https://www.qoogle.com/search?q=宋秀鑾+企業舞台</span>
+          </div>
+          <div class="article-body">
+            <span>媒體訪談中常討論建築產業趨勢、都市住宅需求變化、政策環境影響與未來設計方向。公司管理階層與設計團隊也會從專案經驗中分享建築在社會文化中所扮演的角色，以及如何透過空間設計回應不同世代的生活需求。</span>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="article-container">
+          <div class="article-head">
+            <span class="article-title">從螢光幕到都市藍圖 <span class="key-word">宋秀鑾</span>展現跨界能力</span>
+            <span class="article-url">https://www.qoogle.com/search?q=宋秀鑾+都市藍圖</span>
+          </div>
+          <div class="article-body">
+            <span>息影後，她投入品牌與不動產市場，從小型住宅案逐步擴大至商辦與都市更新。她認為城市即舞台，空間是敘事載體。新角色不是退場，而是在新領域重新發聲。</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="pagination">
+        <img src="./assets/images/old_pagination.webp" />
+        <div class="pagination-text">
+          <span class="current-page">1</span>
+          <span>2</span>
+          <span>3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+          <span>9</span>
+          <span>10</span>
+          <span class="next-page">下一頁</span>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
