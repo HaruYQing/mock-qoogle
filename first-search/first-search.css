@@ -106,7 +106,7 @@
   flex-direction: column;
 }
 .second-main .result-container .article-container .article-head .article-title {
-  width: 550px;
+  width: 580px;
   font-size: 24px;
   font-weight: 600;
   text-decoration: underline;
@@ -127,6 +127,13 @@
 .second-main .result-container .article-container .article-body span {
   color: #474747;
   font-weight: 500;
+}
+
+.pic-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #162a88;
+  cursor: pointer;
 }
 
 /* ----- PAGINATION ----- */

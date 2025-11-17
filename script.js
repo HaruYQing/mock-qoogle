@@ -19,6 +19,10 @@ function handleNewSearch(event) {
     case "鴻雲案":
       url = "hong-yun.html";
       break;
+
+    case "鴻雲團結大會":
+      url = "hong-yun-party.html";
+      break;
   }
 
   if (url) {
