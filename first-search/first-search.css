@@ -136,6 +136,62 @@
   cursor: pointer;
 }
 
+.video-container {
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.video-item {
+  box-sizing: border-box;
+  padding: 24px 16px;
+  width: 600px;
+  display: flex;
+  gap: 16px;
+  border-bottom: 1px solid #cecece;
+}
+.video-img {
+  cursor: pointer;
+}
+.video-text {
+  display: flex;
+  flex-direction: column;
+}
+.text-title {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  color: #162a88;
+}
+.text-title:hover {
+  text-decoration: underline;
+}
+.text-source {
+  font-size: 14px;
+  font-weight: 500;
+  color: #484747;
+}
+
+.show-all {
+  cursor: pointer;
+  position: absolute;
+  bottom: -15px;
+  left: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 30px;
+  border-radius: 100px;
+  background-color: #f1f3f4;
+}
+.chip-text {
+  font-size: 16px;
+  color: #231815;
+}
+
 /* ----- PAGINATION ----- */
 .second-main .pagination {
   margin-top: 120px;
