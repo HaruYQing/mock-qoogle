@@ -1,201 +1,242 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mock search engine for tv drama shooting. Won't collect any information."
+    />
+    <title>Qoogle | mock</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mock search engine for tv drama shooting. Won't collect any information." />
-  <title>Qoogle | mock</title>
+    <!-- 網站 icon -->
+    <link rel="icon" href="./assets/icons/favicon.png" type="image/png" />
 
-  <!-- 網站 icon -->
-  <link rel="icon" href="./assets/icons/favicon.png" type="image/png" />
+    <!-- 預載圖片 -->
+    <link rel="preload" as="image" href="./assets/images/old_tiny_logo.webp" />
+    <link rel="preload" as="image" href="./assets/images/old_pagination.webp" />
 
-  <!-- 預載圖片 -->
-  <link rel="preload" as="image" href="./assets/images/old_tiny_logo.webp" />
-  <link rel="preload" as="image" href="./assets/images/old_pagination.webp" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./old.css" />
+    <link rel="stylesheet" href="./first-search/first-search.css" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="stylesheet" href="./old.css" />
-  <link rel="stylesheet" href="./first-search/first-search.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet" />
-</head>
+  <body>
+    <div class="main-container">
+      <header class="old-header">
+        <div class="old-left">
+          <span class="wide focused">搜尋</span>
+          <span class="wide">相片</span>
+          <span class="wide">地圖</span>
+          <span>Play</span>
+          <span>QouTube</span>
+          <span class="wide">新聞</span>
+          <span>Qmail</span>
+          <span class="wide">文件</span>
+          <span class="wide">更多</span>
+          <img src="./assets/icons/down_tri_icon.png" />
+        </div>
 
-<body>
-  <div class="main-container">
-    <header class="old-header">
-      <div class="old-left">
-        <span class="wide focused">搜尋</span>
-        <span class="wide">相片</span>
-        <span class="wide">地圖</span>
-        <span>Play</span>
-        <span>QouTube</span>
-        <span class="wide">新聞</span>
-        <span>Qmail</span>
-        <span class="wide">文件</span>
-        <span class="wide">更多</span>
-        <img src="./assets/icons/down_tri_icon.png" />
-      </div>
+        <div class="old-right">
+          <span>登入</span>
+          <img src="./assets/icons/setting_icon.png" />
+        </div>
+      </header>
 
-      <div class="old-right">
-        <span>登入</span>
-        <img src="./assets/icons/setting_icon.png" />
-      </div>
-    </header>
+      <header class="second-header">
+        <div class="second-top">
+          <img src="./assets/images/old_tiny_logo.webp" />
 
-    <header class="second-header">
-      <div class="second-top">
-        <img src="./assets/images/old_tiny_logo.webp" />
+          <form
+            class="second-search-container"
+            onsubmit="handleNewSearch(event)"
+          >
+            <input type="text" value="鴻雲案" />
+            <button type="submit">
+              <img src="./assets/icons/search_icon.png" />
+            </button>
+          </form>
 
-        <form class="second-search-container" onsubmit="handleNewSearch(event)">
-          <input type="text" value="鴻雲案" />
-          <button type="submit">
-            <img src="./assets/icons/search_icon.png" />
-          </button>
-        </form>
+          <span>安全搜尋:關閉</span>
+        </div>
+        <div class="second-middle">
+          <span>網頁</span>
+          <span>圖片</span>
+          <span>地圖</span>
+          <span>評論</span>
+          <span
+            >更多
+            <img src="./assets/icons/down_tri_tiny_icon.png" />
+          </span>
+          <span>搜尋工具</span>
+        </div>
+        <div class="second-bottom">
+          <span>約有211項結果(搜尋時間:約0.27秒)</span>
+        </div>
+      </header>
 
-        <span>安全搜尋:關閉</span>
-      </div>
-      <div class="second-middle">
-        <span>網頁</span>
-        <span>圖片</span>
-        <span>地圖</span>
-        <span>評論</span>
-        <span>更多
-          <img src="./assets/icons/down_tri_tiny_icon.png" />
-        </span>
-        <span>搜尋工具</span>
-      </div>
-      <div class="second-bottom">
-        <span>約有211項結果(搜尋時間:約0.27秒)</span>
-      </div>
-    </header>
+      <main class="second-main">
+        <section class="result-container">
+          <div class="video-container">
+            <span class="pic-title">影片</span>
 
-    <main class="second-main">
-      <section class="result-container">
-        <!-- TODO: 影片區 -->
-        <!-- <h1 onclick="openNewPage('all-black.html')">test</h1> -->
-        <div class="video-container">
-          <span class="pic-title">影片</span>
+            <!-- v1 -->
+            <div class="video-item">
+              <img src="./assets/images/video-1.webp" class="video-img" />
+              <div class="video-text">
+                <span class="text-title"
+                  >【歷史上的今天】史上最惡劣的詐騙集團，16萬台灣人血本無歸</span
+                >
+                <span class="text-source">QouTube · 新視界新聞</span>
+              </div>
+            </div>
 
-          <!-- v1 -->
-          <div class="video-item">
-            <img src="./assets/images/video-1.webp" class="video-img" />
-            <div class="video-text">
-              <span class="text-title">【歷史上的今天】史上最惡劣的詐騙集團，16萬台灣人血本無歸</span>
-              <span class="text-source">QouTube · 新視界新聞</span>
+            <!-- v2 -->
+            <div class="video-item">
+              <img src="./assets/images/video-2.webp" class="video-img" />
+              <div class="video-text">
+                <span class="text-title"
+                  >【歷史上的今天】台灣首家老鼠會「鴻雲」吸20萬人近千億</span
+                >
+                <span class="text-source">QouTube · 新視界新聞</span>
+              </div>
+            </div>
+
+            <!-- v3 -->
+            <div class="video-item" onclick="openNewPage('all-black.html')">
+              <img src="./assets/images/video-3.webp" class="video-img" />
+              <div class="video-text">
+                <span class="text-title"
+                  >【歷史上的今天】鴻雲案真相！20萬人陷入的投資地獄</span
+                >
+                <span class="text-source">QouTube · 新視界新聞</span>
+              </div>
+            </div>
+
+            <div class="show-all">
+              <span class="chip-text">全部顯示 > </span>
             </div>
           </div>
 
-          <!-- v2 -->
-          <div class="video-item">
-            <img src="./assets/images/video-2.webp" class="video-img" />
-            <div class="video-text">
-              <span class="text-title">【歷史上的今天】台灣首家老鼠會「鴻雲」吸20萬人近千億</span>
-              <span class="text-source">QouTube · 新視界新聞</span>
+          <!-- 1 -->
+          <div class="article-container">
+            <div class="article-head">
+              <span class="article-title">投資詐騙始祖是他吸20萬人近千億</span>
+              <span class="article-url">https://xnw.news>時代新聞網</span>
+            </div>
+            <div class="article-body">
+              <span
+                >1981年，由<span class="key-word">包長鴻</span
+                >等人創立的鴻雲集團，利用高額利息吸引投資。鴻源憑證一股15萬，每月利息高達4%，年化報酬率達48%，遠超當時銀行5%-9%的定存利率。
+                這種暴利引發廣大民眾熱烈參與</span
+              >
             </div>
           </div>
 
-          <!-- v3 -->
-          <div class="video-item" onclick="openNewPage('all-black.html')">
-            <img src="./assets/images/video-3.webp" class="video-img" />
-            <div class="video-text">
-              <span class="text-title">【歷史上的今天】鴻雲案真相！20萬人陷入的投資地獄</span>
-              <span class="text-source">QouTube · 新視界新聞</span>
+          <!-- 2 -->
+          <div class="article-container">
+            <div class="article-head">
+              <span class="article-title">史上最強老鼠會!鴻雲機構吸金千億</span>
+              <span class="article-url"
+                >https://politics.example.com.test-briefing</span
+              >
+            </div>
+            <div class="article-body">
+              <span
+                >鴻源卻突然宣布倒閉，投資人<span class="key-word">包長鴻</span
+                >快把我們害死了，1981年法院宣告鴻源破產，泡沫破了大家發財夢這才醒了，成立自救會已經無藥可救，
+                在債權人大會上鬧場崩潰被架了出去，錢依然一去不回，二十萬名投資人栽了跟頭....</span
+              >
             </div>
           </div>
 
-          <div class="show-all">
-            <span class="chip-text">全部顯示 > </span>
+          <!-- 3 -->
+          <div class="article-container">
+            <div class="article-head">
+              <span class="article-title"
+                >吸金金額最大，被害人規模也最大的鴻雲詐騙案！</span
+              >
+              <span class="article-url"
+                >https://world.example.org.global-roundup</span
+              >
+            </div>
+            <div class="article-body">
+              <span
+                ><span class="key-word">包長鴻</span
+                >為鴻雲的董事長機構成長快速，成為擁有一萬名員工的大型公司，
+                公司的業務為吸引投資者，再藉由超高的獲利數字、獎金制度，誘導更多人加入，如此輕鬆易賺的金錢，
+                讓不少人就算與親友翻臉都要籌到錢，甚至他們還擴大舉辦團結大會</span
+              >
+            </div>
           </div>
-        </div>
 
-        <!-- 1 -->
-        <div class="article-container">
-          <div class="article-head">
-            <span class="article-title">投資詐騙始祖是他吸20萬人近千億</span>
-            <span class="article-url">https://xnw.news>時代新聞網</span>
+          <!-- 4 -->
+          <div class="article-container">
+            <div class="article-head">
+              <span class="article-title"
+                >【16萬人遭殃台灣史上最大的吸金騙局】</span
+              >
+              <span class="article-url"
+                >http://localhost:3000/news/壹刻新聞</span
+              >
+            </div>
+            <div class="article-body">
+              <span
+                >鴻雲機構是臺灣第一家以月利四分(4%利息)高利貸與老鼠會形式吸收民間游資的投資公司，
+                當時臺灣的合法投資產品不多，鴻雲機構很快就成為社會大眾眼中的「金雞母」，
+                投資人以退伍軍人與公教人員居多。檢調單位開始強力查緝地下投資公司，鴻雲機構在連續三星期內發生四次擠兌風暴。</span
+              >
+            </div>
           </div>
-          <div class="article-body">
-            <span>1981年，由<span class="key-word">包長鴻</span>等人創立的鴻雲集團，利用高額利息吸引投資。鴻源憑證一股15萬，每月利息高達4%，年化報酬率達48%，遠超當時銀行5%-9%的定存利率。
-              這種暴利引發廣大民眾熱烈參與</span>
-          </div>
-        </div>
 
-        <!-- 2 -->
-        <div class="article-container">
-          <div class="article-head">
-            <span class="article-title">史上最強老鼠會!鴻雲機構吸金千億</span>
-            <span class="article-url">https://politics.example.com.test-briefing</span>
+          <!-- 5 -->
+          <div class="article-container">
+            <div class="article-head">
+              <span class="article-title"
+                >信了<span class="key-word">包長鴻</span
+                >！被害人800萬積蓄被騙光</span
+              >
+              <span class="article-url"
+                >https://invest.example.net/insight/q4-report</span
+              >
+            </div>
+            <div class="article-body">
+              <span
+                >鴻雲機構突然倒閉，但卻在4月正式結束營業，超過16萬人因此賠光積蓄，非法吸金總額高達新臺幣940多億元，
+                依法處理其資產後卻只得到新臺幣40億元，所以每人可分到的賠償金非常少(15萬元債權只能得到105元的賠償金)</span
+              >
+            </div>
           </div>
-          <div class="article-body">
-            <span>鴻源卻突然宣布倒閉，投資人<span class="key-word">包長鴻</span>快把我們害死了，1981年法院宣告鴻源破產，泡沫破了大家發財夢這才醒了，成立自救會已經無藥可救，
-              在債權人大會上鬧場崩潰被架了出去，錢依然一去不回，二十萬名投資人栽了跟頭....</span>
-          </div>
-        </div>
 
-        <!-- 3 -->
-        <div class="article-container">
-          <div class="article-head">
-            <span class="article-title">吸金金額最大，被害人規模也最大的鴻雲詐騙案！</span>
-            <span class="article-url">https://world.example.org.global-roundup</span>
+          <div class="pagination">
+            <img src="./assets/images/old_pagination.webp" />
+            <div class="pagination-text">
+              <span class="current-page">1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>5</span>
+              <span>6</span>
+              <span>7</span>
+              <span>8</span>
+              <span>9</span>
+              <span>10</span>
+              <span class="next-page">下一頁</span>
+            </div>
           </div>
-          <div class="article-body">
-            <span><span class="key-word">包長鴻</span>為鴻雲的董事長機構成長快速，成為擁有一萬名員工的大型公司，
-              公司的業務為吸引投資者，再藉由超高的獲利數字、獎金制度，誘導更多人加入，如此輕鬆易賺的金錢，
-              讓不少人就算與親友翻臉都要籌到錢，甚至他們還擴大舉辦團結大會</span>
-          </div>
-        </div>
+        </section>
+      </main>
+    </div>
 
-        <!-- 4 -->
-        <div class="article-container">
-          <div class="article-head">
-            <span class="article-title">【16萬人遭殃台灣史上最大的吸金騙局】</span>
-            <span class="article-url">http://localhost:3000/news/壹刻新聞</span>
-          </div>
-          <div class="article-body">
-            <span>鴻雲機構是臺灣第一家以月利四分(4%利息)高利貸與老鼠會形式吸收民間游資的投資公司，
-              當時臺灣的合法投資產品不多，鴻雲機構很快就成為社會大眾眼中的「金雞母」，
-              投資人以退伍軍人與公教人員居多。檢調單位開始強力查緝地下投資公司，鴻雲機構在連續三星期內發生四次擠兌風暴。</span>
-          </div>
-        </div>
-
-        <!-- 5 -->
-        <div class="article-container">
-          <div class="article-head">
-            <span class="article-title">信了<span class="key-word">包長鴻</span>！被害人800萬積蓄被騙光</span>
-            <span class="article-url">https://invest.example.net/insight/q4-report</span>
-          </div>
-          <div class="article-body">
-            <span>鴻雲機構突然倒閉，但卻在4月正式結束營業，超過16萬人因此賠光積蓄，非法吸金總額高達新臺幣940多億元，
-              依法處理其資產後卻只得到新臺幣40億元，所以每人可分到的賠償金非常少(15萬元債權只能得到105元的賠償金)</span>
-          </div>
-        </div>
-
-        <div class="pagination">
-          <img src="./assets/images/old_pagination.webp" />
-          <div class="pagination-text">
-            <span class="current-page">1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>5</span>
-            <span>6</span>
-            <span>7</span>
-            <span>8</span>
-            <span>9</span>
-            <span>10</span>
-            <span class="next-page">下一頁</span>
-          </div>
-        </div>
-    </main>
-  </div>
-
-  <script src="./script.js"></script>
-</body>
-
+    <script src="./script.js"></script>
+  </body>
 </html>
