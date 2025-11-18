@@ -41,6 +41,7 @@ function handleSubmit(event) {
 
 function navigate(event, url) {
   event.preventDefault();
+
   // 組合完整的根目錄URL
   const fullUrl = window.location.origin + "/" + url.replace(/^\//, "");
   window.location.assign(fullUrl);

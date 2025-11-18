@@ -7,7 +7,7 @@
       name="description"
       content="Mock search engine for tv drama shooting. Won't collect any information."
     />
-    <title>揚威建設</title>
+    <title>創辦人故事 | 揚威建設</title>
 
     <!-- 網站 icon -->
     <link rel="icon" href="../assets/icons/favicon.png" type="image/png" />
@@ -39,14 +39,10 @@
           <div class="nav-item">
             <span class="item-text">最新消息</span>
           </div>
-          <div
-            class="nav-item item-with-icon"
-            onmouseenter="showDropdown()"
-            onmouseleave="hideDropdown()"
-          >
+          <div class="nav-item item-with-icon">
             <span class="item-text">公司介紹</span>
             <img src="../assets/icons/yw-down.png" />
-            <div class="dropdown" id="dropdown">
+            <div class="dropdown">
               <div class="dropdown-item">
                 <span class="dropdown-text">公司簡介</span>
               </div>
@@ -56,10 +52,7 @@
               <div class="dropdown-item">
                 <span class="dropdown-text">組織架構</span>
               </div>
-              <div
-                class="dropdown-item"
-                onclick="navigate(event, 'yw-home/founder.html')"
-              >
+              <div class="dropdown-item">
                 <span class="dropdown-text">創辦人故事</span>
               </div>
               <div class="dropdown-item">
@@ -92,37 +85,11 @@
       </div>
     </header>
 
-    <main class="main">
-      <div class="main-text">
-        <h1>
-          築夢踏實、揚名立業
-          <br />
-          誠信為本、品質第一
-        </h1>
-        <p>
-          揚威建設股份有限公司創立以來，以「築夢踏實、揚名立業」為企業精神，
-          <br />
-          專注於不動產開發、都市更新與大型建築工程的規劃與執行。
-        </p>
+    <main class="founder-main">
+      <div class="main-header">
+        <span class="main-title">創辦人故事</span>
+        <!-- TODO -->
       </div>
     </main>
   </body>
-
-  <script src="../script.js"></script>
-  <script>
-    function showDropdown() {
-      const dropdownEl = document.getElementById("dropdown");
-
-      if (dropdownEl) {
-        dropdownEl.classList.add("show-dropdown");
-      }
-    }
-    function hideDropdown() {
-      const dropdownEl = document.getElementById("dropdown");
-
-      if (dropdownEl) {
-        dropdownEl.classList.remove("show-dropdown");
-      }
-    }
-  </script>
 </html>
