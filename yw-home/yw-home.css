@@ -136,3 +136,24 @@ header {
   top: 80px;
   left: 80px;
 }
+
+.main-content {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 48px 80px;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.content-img img {
+  width: 320px;
+}
+.content-text h3 {
+  color: #757575;
+  font-size: 36px;
+  font-weight: 400;
+}
+.content-text p {
+  color: #757575;
+  font-size: 16px;
+}
