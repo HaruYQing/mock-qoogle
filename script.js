@@ -39,8 +39,8 @@ function handleSubmit(event) {
   event.preventDefault();
 }
 
-function navigate(event, url) {
-  event.preventDefault();
+function navigate(url) {
+  // event.preventDefault();
 
   // 組合完整的根目錄URL
   const fullUrl = window.location.origin + "/" + url.replace(/^\//, "");
